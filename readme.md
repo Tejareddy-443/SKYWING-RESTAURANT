@@ -1,45 +1,61 @@
-# Registration Form with Flask & MySQL
+# 🍽 SkyWing Restaurant Website with Registration System
 
-## Overview
+## 📖 Project Overview
 
-This project is a **user registration system** built using **HTML**, **Flask (Python)**, and **MySQL**. Users can:
+SkyWing Restaurant is a modern restaurant website built using:
 
-- Fill a registration form
-- Submit their details
-- Store the data in a **MySQL database**
-- View all registered users in a **table format** after successful registration
+- HTML
+- CSS
+- Flask (Python)
+- MySQL
+- Jinja2 Template Engine
 
----
+This project combines:
 
-## Features
-
-1. **User Registration**  
-   - Collects Name, Email, Password, and Confirm Password from users.
-   - Validates that passwords match before saving.
-
-2. **Database Storage**  
-   - Uses MySQL to store registered users.
-   - Uses parameterized queries to prevent SQL injection.
-
-3. **Display Registered Users**  
-   - Shows all users in a clean table format after registration.
+✔ A modern restaurant homepage  
+✔ Responsive design  
+✔ Veg & Non-Veg menu sections  
+✔ Professional navigation bar  
+✔ Hero section with call-to-action  
+✔ Footer section  
+✔ User Registration system  
+✔ MySQL database integration  
 
 ---
 
-## Technologies Used
+## 🌐 Website Features
 
-- **Frontend:** HTML, CSS
-- **Backend:** Python, Flask
-- **Database:** MySQL
-- **Template Engine:** Jinja2 (for dynamic HTML rendering)
+### 🏠 Modern Homepage
+- Dark themed hero section
+- Navigation bar with hover effects
+- “Book a Table” button
+- Responsive layout using Flexbox
+- Professional footer with contact info
+
+### 🍲 Menu Section
+- Separate Veg and Non-Veg sections
+- 10 items in each category
+- Styled tables with hover effects
+- Clean and readable layout
+
+### 🔐 User Registration System
+- Collects Name, Email, Password
+- Confirms password validation
+- Stores data in MySQL database
+- Displays all registered users in table format
+- Uses parameterized queries to prevent SQL injection
 
 ---
 
-## Installation
+## 🛠 Technologies Used
 
-1. **Clone or download this repository**
+| Layer        | Technology |
+|--------------|------------|
+| Frontend     | HTML, CSS |
+| Backend      | Python (Flask) |
+| Database     | MySQL |
+| Template Engine | Jinja2 |
 
-```bash
-git clone https://github.com/Tejareddy-443/Registration-Form.git
+---
 
-Template Engine: Jinja2 (for dynamic HTML rendering)
+## 📂 Project Structure
