@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SkyWing Restaurant - Offers</title>
+
+<style>
+body{background:rgb(216,212,132);font-family:Arial;margin:0;}
+
+nav{
+display:flex;justify-content:space-between;
+padding:20px 60px;background:rgb(13,22,57);
+}
+.logo{display:flex;align-items:center;}
+.logo img{width:100px;height:70px;background:#ddd;}
+.logo h2{color:orange;margin-left:10px;}
+
+nav ul{list-style:none;display:flex;}
+nav ul li{margin-left:25px;}
+nav ul li a{color:white;text-decoration:none;}
+.btn{background:orange;padding:8px 15px;border-radius:4px;color:black;}
+
+.offers{text-align:center;padding:40px;}
+.offer-box{
+background:white;
+margin:20px auto;
+width:60%;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+footer{
+background:rgb(13,22,57);
+color:#ccc;
+text-align:center;
+padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">
+<img src="{{ url_for('static', filename='Logo.png') }}">
+<h2>SkyWing</h2>
+</div>
+
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/menu">Menu</a></li>
+<li><a href="/gallary">Gallery</a></li>
+<li><a href="/offers">Offers</a></li>
+<li><a href="/hours">Hours & Location</a></li>
+<li><a href="/reviews">Reviews</a></li>
+<li><a href="#" class="btn">Book a Table</a></li>
+</ul>
+</nav>
+
+<section class="offers">
+<h2>Special Offers</h2>
+
+<div class="offer-box">
+<h3>🍛 Weekend Family Combo</h3>
+<p>Get 20% OFF on orders above ₹999</p>
+</div>
+
+<div class="offer-box">
+<h3>🔥 Student Offer</h3>
+<p>Flat 15% discount with student ID</p>
+</div>
+
+<div class="offer-box">
+<h3>🎉 Birthday Special</h3>
+<p>Free dessert on birthday celebrations</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 SkyWing Restaurant
+</footer>
+
+</body>
+</html>

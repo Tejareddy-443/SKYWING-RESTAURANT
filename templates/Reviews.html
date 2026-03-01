@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customer Reviews</title>
+
+<style>
+body{background:rgb(216,212,132);font-family:Arial;margin:0;}
+
+nav{
+display:flex;justify-content:space-between;
+padding:20px 60px;background:rgb(13,22,57);
+}
+.logo{display:flex;align-items:center;}
+.logo img{width:100px;height:70px;background:#ddd;}
+.logo h2{color:orange;margin-left:10px;}
+
+nav ul{list-style:none;display:flex;}
+nav ul li{margin-left:25px;}
+nav ul li a{color:white;text-decoration:none;}
+.btn{background:orange;padding:8px 15px;border-radius:4px;color:black;}
+
+.review{
+background:white;
+width:60%;
+margin:20px auto;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+footer{
+background:rgb(13,22,57);
+color:#ccc;
+text-align:center;
+padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">
+<img src="{{ url_for('static', filename='Logo.png') }}">
+<h2>SkyWing</h2>
+</div>
+
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/menu">Menu</a></li>
+<li><a href="/gallary">Gallery</a></li>
+<li><a href="/offers">Offers</a></li>
+<li><a href="/hours">Hours & Location</a></li>
+<li><a href="/reviews">Reviews</a></li>
+<li><a href="#" class="btn">Book a Table</a></li>
+</ul>
+</nav>
+
+<h2 style="text-align:center;">Customer Reviews</h2>
+
+<div class="review">
+⭐⭐⭐⭐⭐  
+<p>"Amazing food and excellent service!"</p>
+<b>- Rahul</b>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐  
+<p>"Best biryani in town. Loved the ambience."</p>
+<b>- Sneha</b>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐  
+<p>"Perfect place for family dinner."</p>
+<b>- Arjun</b>
+</div>
+
+<footer>
+© 2026 SkyWing Restaurant
+</footer>
+
+</body>
+</html>

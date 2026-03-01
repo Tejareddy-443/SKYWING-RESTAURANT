@@ -8,6 +8,18 @@ def home():
 @app.route('/menu')
 def menu():
     return render_template("Menu.html")
+@app.route('/gallary')
+def gallary():
+    return render_template("Gallery.html")
+@app.route('/hours')
+def hours():
+    return render_template("Hours.html")
+@app.route('/reviews')
+def reviews():
+    return render_template("Reviews.html")
+@app.route('/offers')
+def offers():
+    return render_template("Offers.html")
 @app.route('/submit_registration',methods=['POST'])
 def registration():
     name=request.form['name']

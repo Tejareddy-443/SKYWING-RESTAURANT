@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SkyWing Restaurant - Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    background-color: rgb(216,212,132);
+    font-family: Arial;
+    margin:0;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background-color:rgb(13,22,57);
+}
+.logo{
+    display:flex;
+    align-items:center;
+}
+.logo img{
+    width:100px;
+    height:70px;
+    background:#ddd;
+}
+.logo h2{color:orange;margin-left:10px;}
+
+nav ul{list-style:none;display:flex;}
+nav ul li{margin-left:25px;}
+nav ul li a{text-decoration:none;color:white;}
+nav ul li a:hover{color:orange;}
+
+.btn{
+    background:orange;
+    padding:8px 15px;
+    border-radius:4px;
+    color:black;
+    font-weight:bold;
+}
+
+/* GALLERY */
+.gallery{
+    text-align:center;
+    padding:40px;
+}
+.gallery img{
+    width:280px;
+    height:200px;
+    margin:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+/* FOOTER */
+footer{
+    background:rgb(13,22,57);
+    padding:40px;
+    color:#ccc;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">
+<img src="{{ url_for('static', filename='Logo.png') }}">
+<h2>SkyWing</h2>
+</div>
+
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/menu">Menu</a></li>
+<li><a href="/gallary">Gallery</a></li>
+<li><a href="/offers">Offers</a></li>
+<li><a href="/hours">Hours & Location</a></li>
+<li><a href="/reviews">Reviews</a></li>
+<li><a href="#" class="btn">Book a Table</a></li>
+</ul>
+</nav>
+
+<section class="gallery">
+<h2>Food & Ambience Gallery</h2>
+
+<img src="https://picsum.photos/300/200?1">
+<img src="https://picsum.photos/300/200?2">
+<img src="https://picsum.photos/300/200?3">
+<img src="https://picsum.photos/300/200?4">
+<img src="https://picsum.photos/300/200?5">
+<img src="https://picsum.photos/300/200?6">
+
+</section>
+
+<footer>
+© 2026 SkyWing Restaurant | All Rights Reserved
+</footer>
+
+</body>
+</html>
