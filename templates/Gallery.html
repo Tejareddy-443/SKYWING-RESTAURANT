@@ -58,12 +58,45 @@ nav ul li a:hover{color:orange;}
 }
 
 /* FOOTER */
+/* FOOTER */
 footer{
     background:rgb(13,22,57);
-    padding:40px;
-    color:#ccc;
-    text-align:center;
+    padding:50px 60px 20px;
+    margin-top:50px;
 }
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer-box{
+    width:30%;
+}
+
+.footer-box h3{
+    color:orange;
+}
+
+.footer-box p,
+.footer-box a{
+    color:#ccc;
+    text-decoration:none;
+}
+
+.footer-box a:hover{
+    color:orange;
+}
+
+.footer-bottom{
+    text-align:center;
+    margin-top:30px;
+    border-top:1px solid #333;
+    padding-top:15px;
+    color:#aaa;
+}
+
 </style>
 </head>
 
@@ -71,7 +104,7 @@ footer{
 
 <nav>
 <div class="logo">
-<img src="{{ url_for('static', filename='Logo.png') }}">
+<img src="Logo.png">
 <h2>SkyWing</h2>
 </div>
 
@@ -99,7 +132,37 @@ footer{
 </section>
 
 <footer>
-© 2026 SkyWing Restaurant | All Rights Reserved
+    <div class="footer-container">
+
+        <!-- Brand Mission -->
+     
+        <!-- Contact Information -->
+        <div class="footer-box">
+            <h3>Contact Information</h3>
+            <p>📍 Wayanad, Kerala</p>
+            <p>📞 +91 8456324568</p>
+            <p>📧 skywingrestaurant@gmail.com</p>
+        </div>
+        <!-- Social Media -->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <a href="#">Instagram</a><br>
+            <a href="#">Twitter</a><br>
+            <a href="#">YouTube</a>
+        </div>
+
+        <!-- Legal Information -->
+        <div class="footer-box">
+            <h3>Legal</h3>
+            <a href="#">Privacy Policy</a><br>
+            <a href="#">Terms & Conditions</a><br>
+            <a href="#">Refund Policy</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 SkyWing Restaurant | All Rights Reserved
+    </div>
 </footer>
 
 </body>
