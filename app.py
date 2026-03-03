@@ -20,6 +20,9 @@ def reviews():
 @app.route('/offers')
 def offers():
     return render_template("Offers.html")
+@app.route('/login')
+def Login():
+    return render_template("Login.html")
 @app.route('/submit_registration',methods=['POST'])
 def registration():
     name=request.form['name']
